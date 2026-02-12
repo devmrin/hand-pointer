@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Hand Pointer Cursor",
+  "version": "1.0",
+  "description": "Toggle your cursor to a custom hand pointer image",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Hand Cursor"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["images/hand-cursor.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
